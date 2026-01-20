@@ -1,16 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <component>
   <api>
     <prop name="profile_num" type="string" default="1"/>
+    <prop name="title" type="string" default="HOME"/>
     <prop name="right_text" type="string" default="USB"/>
   </api>
-  <view extends="lv_obj" width="100%" height="32">
-    <style name="st_panel"/>
-    <lv_obj width="100%" height="100%" flex_flow="row" style_pad_column="8" style_bg_opa="0">
-      <cmp_profile_badge profile_num="$profile_num"/>
-      <lv_label text="$right_text" align="center" style_flex_grow="1">
-        <style name="st_text"/>
-      </lv_label>
-    </lv_obj>
+
+  <view extends="lv_obj"
+        width="100%" height="28"
+        styles="top_bar">
+
+    <cmp_profile_badge profile_num="$profile_num" align="left_mid" x="0"/>
+
+    <lv_label text="$title" align="center" styles="text_title"/>
+
+    <lv_label text="$right_text" align="right_mid" styles="text_muted"/>
   </view>
 </component>
