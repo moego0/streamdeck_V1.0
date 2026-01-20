@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen>
+  <name>Profile Switcher</name>
+  <description>List of profiles with selection and navigation</description>
+  <size width="172" height="320"/>
+  <bg_color>#0a0e27</bg_color>
+  
+  <!-- Main Container -->
+  <obj class="lv_obj" id="profile_main">
+    <layout>flex</layout>
+    <flex_direction>column</flex_direction>
+    <flex_align>start</flex_align>
+    <width>172</width>
+    <height>320</height>
+    <pad_all>4</pad_all>
+    
+    <!-- Header -->
+    <obj class="lv_obj" id="profile_header">
+      <width>164</width>
+      <height>32</height>
+      <layout>flex</layout>
+      <flex_direction>row</flex_direction>
+      <flex_align>space_between</flex_align>
+      
+      <obj class="lv_label" id="profile_title">
+        <style_class>screen_title</style_class>
+        <text>Profiles</text>
+        <width>100</width>
+      </obj>
+      
+      <obj class="lv_obj" id="profile_badge_small">
+        <style_class>profile_badge_bg</style_class>
+        <width>50</width>
+        <height>28</height>
+        
+        <obj class="lv_label" id="profile_current_num">
+          <style_class>profile_number_text</style_class>
+          <text>1</text>
+        </obj>
+      </obj>
+    </obj>
+    
+    <!-- Divider -->
+    <obj class="lv_obj" id="profile_divider">
+      <width>164</width>
+      <height>1</height>
+      <bg_color>#2a2f4a</bg_color>
+    </obj>
+    
+    <!-- Profile List -->
+    <obj class="lv_roller" id="profile_roller">
+      <width>164</width>
+      <height>200</height>
+      <style_class>list_item</style_class>
+      
+      <!-- List items populated by event handler -->
+      <option id="prof_1">
+        <text>Profile 1</text>
+        <style_class>list_item:selected</style_class>
+      </option>
+      <option id="prof_2">
+        <text>Profile 2</text>
+        <style_class>list_item</style_class>
+      </option>
+      <option id="prof_3">
+        <text>Profile 3</text>
+        <style_class>list_item</style_class>
+      </option>
+      <option id="prof_4">
+        <text>Profile 4</text>
+        <style_class>list_item</style_class>
+      </option>
+      <option id="prof_5">
+        <text>Profile 5</text>
+        <style_class>list_item</style_class>
+      </option>
+      <option id="prof_6">
+        <text>Profile 6</text>
+        <style_class>list_item</style_class>
+      </option>
+      <option id="prof_7">
+        <text>Profile 7</text>
+        <style_class>list_item</style_class>
+      </option>
+      <option id="prof_8">
+        <text>Profile 8</text>
+        <style_class>list_item</style_class>
+      </option>
+    </obj>
+    
+    <!-- Controls -->
+    <obj class="lv_obj" id="profile_controls">
+      <width>164</width>
+      <height>60</height>
+      <layout>flex</layout>
+      <flex_direction>column</flex_direction>
+      <flex_align>center</flex_align>
+      <pad_all>8</pad_all>
+      <gap>4</gap>
+      
+      <obj class="lv_label" id="profile_help">
+        <style_class>status_text</style_class>
+        <text>Rotate to select</text>
+        <width>164</width>
+        <height>14</height>
+        <text_align>center</text_align>
+      </obj>
+      
+      <obj class="lv_btn" id="profile_select_btn">
+        <style_class>btn_primary</style_class>
+        <width>140</width>
+        <height>28</height>
+        
+        <obj class="lv_label">
+          <text>Press ENC1 to Select</text>
+          <style_class>btn_primary</style_class>
+        </obj>
+      </obj>
+      
+      <obj class="lv_label" id="profile_nav_hint">
+        <style_class>status_text</style_class>
+        <text>[ ] Back    Next [→]</text>
+        <width>164</width>
+        <height>12</height>
+        <text_align>center</text_align>
+      </obj>
+    </obj>
+  </obj>
+</screen>

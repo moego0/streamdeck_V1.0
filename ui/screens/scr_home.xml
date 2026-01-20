@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen>
+  <name>Home Dashboard</name>
+  <description>Default home screen showing profile, status, and widget tiles</description>
+  <size width="172" height="320</size>
+  <bg_color>#0a0e27</bg_color>
+  
+  <!-- Main Container -->
+  <obj class="lv_obj" id="home_main">
+    <layout>flex</layout>
+    <flex_direction>column</flex_direction>
+    <flex_align>start</flex_align>
+    <width>172</width>
+    <height>320</height>
+    <pad_all>4</pad_all>
+    <pad_row>2</pad_row>
+    <pad_column>4</pad_column>
+    
+    <!-- Header: Profile Badge -->
+    <obj class="lv_obj" id="home_header">
+      <layout>flex</layout>
+      <flex_direction>row</flex_direction>
+      <flex_align>space_between</flex_align>
+      <width>164</width>
+      <height>36</height>
+      
+      <!-- Profile Badge Component -->
+      <obj class="lv_obj" id="profile_badge_container">
+        <style_class>profile_badge_bg</style_class>
+        <width>50</width>
+        <height>32</height>
+        
+        <obj class="lv_label" id="profile_number_display">
+          <style_class>profile_number_text</style_class>
+          <text>PROF 1</text>
+        </obj>
+      </obj>
+      
+      <!-- USB Status -->
+      <obj class="lv_label" id="home_usb_status">
+        <style_class>status_icon</style_class>
+        <text>●</text>
+        <!-- Green for connected, Red for disconnected -->
+      </obj>
+      
+      <!-- Mic Status Toggle -->
+      <obj class="lv_btn" id="home_mic_btn">
+        <style_class>btn_secondary</style_class>
+        <width>40</width>
+        <height>28</height>
+        
+        <obj class="lv_label" id="home_mic_label">
+          <text>MIC ON</text>
+          <style_class>status_text</style_class>
+        </obj>
+      </obj>
+    </obj>
+    
+    <!-- Status Bar -->
+    <obj class="lv_obj" id="home_status_bar">
+      <style_class>status_bar_bg</style_class>
+      <width>164</width>
+      <height>22</height>
+      <layout>flex</layout>
+      <flex_direction>row</flex_direction>
+      <flex_align>space_around</flex_align>
+      
+      <obj class="lv_label" id="home_enc1_mode">
+        <style_class>status_text</style_class>
+        <text>ENC1:VOL</text>
+      </obj>
+      
+      <obj class="lv_label" id="home_enc2_mode">
+        <style_class>status_text</style_class>
+        <text>ENC2:MIC</text>
+      </obj>
+    </obj>
+    
+    <!-- Divider -->
+    <obj class="lv_obj" id="home_divider">
+      <width>164</width>
+      <height>1</height>
+      <bg_color>#2a2f4a</bg_color>
+    </obj>
+    
+    <!-- Tile 1: Volume -->
+    <obj class="lv_obj" id="tile_volume">
+      <style_class>tile_bg</style_class>
+      <width>164</width>
+      <height>48</height>
+      <layout>flex</layout>
+      <flex_direction>column</flex_direction>
+      <flex_align>start</flex_align>
+      <pad_all>6</pad_all>
+      
+      <obj class="lv_label" id="tile_vol_title">
+        <style_class>tile_title</style_class>
+        <text>Volume</text>
+        <height>16</height>
+      </obj>
+      
+      <obj class="lv_bar" id="tile_vol_bar">
+        <style_class>tile_bar</style_class>
+        <width>150</width>
+        <height>10</height>
+        <value>70</value>
+      </obj>
+      
+      <obj class="lv_label" id="tile_vol_pct">
+        <style_class>tile_value_text</style_class>
+        <text>70%</text>
+        <height>12</height>
+      </obj>
+    </obj>
+    
+    <!-- Tile 2: Mic Level -->
+    <obj class="lv_obj" id="tile_mic">
+      <style_class>tile_bg</style_class>
+      <width>164</width>
+      <height>48</height>
+      <layout>flex</layout>
+      <flex_direction>column</flex_direction>
+      <flex_align>start</flex_align>
+      <pad_all>6</pad_all>
+      
+      <obj class="lv_label" id="tile_mic_title">
+        <style_class>tile_title</style_class>
+        <text>Mic Level</text>
+        <height>16</height>
+      </obj>
+      
+      <obj class="lv_bar" id="tile_mic_bar">
+        <style_class>tile_bar</style_class>
+        <width>150</width>
+        <height>10</height>
+        <value>45</value>
+      </obj>
+      
+      <obj class="lv_label" id="tile_mic_pct">
+        <style_class>tile_value_text</style_class>
+        <text>45%</text>
+        <height>12</height>
+      </obj>
+    </obj>
+    
+    <!-- Tile 3: Brightness -->
+    <obj class="lv_obj" id="tile_brightness">
+      <style_class>tile_bg</style_class>
+      <width>164</width>
+      <height>48</height>
+      <layout>flex</layout>
+      <flex_direction>column</flex_direction>
+      <flex_align>start</flex_align>
+      <pad_all>6</pad_all>
+      
+      <obj class="lv_label" id="tile_bright_title">
+        <style_class>tile_title</style_class>
+        <text>RGB Brightness</text>
+        <height>16</height>
+      </obj>
+      
+      <obj class="lv_bar" id="tile_bright_bar">
+        <style_class>tile_bar</style_class>
+        <width>150</width>
+        <height>10</height>
+        <value>100</value>
+      </obj>
+      
+      <obj class="lv_label" id="tile_bright_pct">
+        <style_class>tile_value_text</style_class>
+        <text>100%</text>
+        <height>12</height>
+      </obj>
+    </obj>
+    
+    <!-- Active App Label -->
+    <obj class="lv_label" id="home_active_app">
+      <style_class>screen_label</style_class>
+      <width>164</width>
+      <height>16</height>
+      <text>App: Visual Studio Code</text>
+    </obj>
+    
+    <!-- Footer: Help Text -->
+    <obj class="lv_label" id="home_help">
+      <style_class>status_text</style_class>
+      <text_align>center</text_align>
+      <text>[ ] Prev  Menu  Next [→]</text>
+      <width>164</width>
+      <height>12</height>
+    </obj>
+  </obj>
+</screen>

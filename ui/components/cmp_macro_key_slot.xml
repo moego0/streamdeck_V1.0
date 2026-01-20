@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+  <name>MacroKeySlot</name>
+  <description>Single macro key slot showing label, icon, and color indicator</description>
+  
+  <obj class="lv_btn" id="key_slot">
+    <style_class>macro_key_slot</style_class>
+    <width>28</width>
+    <height>28</height>
+    <layout>flex</layout>
+    <flex_direction>column</flex_direction>
+    <flex_align>center</flex_align>
+    
+    <!-- Key Label -->
+    <obj class="lv_label" id="key_label">
+      <style_class>key_slot_label</style_class>
+      <width>26</width>
+      <height>12</height>
+      <text>Q</text>
+    </obj>
+    
+    <!-- Color Indicator -->
+    <obj class="lv_obj" id="key_color_indicator">
+      <style_class>key_color_indicator</style_class>
+      <width>20</width>
+      <height>4</height>
+    </obj>
+  </obj>
+</component>

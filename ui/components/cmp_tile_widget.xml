@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+  <name>TileWidget</name>
+  <description>Tile widget for dashboard display (volume, mic level, brightness, etc.)</description>
+  
+  <obj class="lv_obj" id="tile_container">
+    <style_class>tile_bg</style_class>
+    <width>160</width>
+    <height>50</height>
+    <layout>flex</layout>
+    <flex_direction>column</flex_direction>
+    <flex_align>start</flex_align>
+    
+    <!-- Title -->
+    <obj class="lv_label" id="tile_title">
+      <style_class>tile_title</style_class>
+      <width>160</width>
+      <height>16</height>
+      <text>Volume</text>
+    </obj>
+    
+    <!-- Slider/Bar -->
+    <obj class="lv_bar" id="tile_bar">
+      <style_class>tile_bar</style_class>
+      <width>150</width>
+      <height>12</height>
+      <value>70</value>
+    </obj>
+    
+    <!-- Value Label -->
+    <obj class="lv_label" id="tile_value">
+      <style_class>tile_value_text</style_class>
+      <width>160</width>
+      <height>14</height>
+      <text>70%</text>
+    </obj>
+  </obj>
+</component>

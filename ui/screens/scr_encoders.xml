@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen>
+  <name>Encoder Assignments</name>
+  <description>Configure encoder modes and view settings</description>
+  <size width="172" height="320"/>
+  <bg_color>#0a0e27</bg_color>
+  
+  <!-- Main Container -->
+  <obj class="lv_obj" id="encoders_main">
+    <layout>flex</layout>
+    <flex_direction>column</flex_direction>
+    <flex_align>start</flex_align>
+    <width>172</width>
+    <height>320</height>
+    <pad_all>4</pad_all>
+    
+    <!-- Header -->
+    <obj class="lv_obj" id="encoders_header">
+      <width>164</width>
+      <height>32</height>
+      <layout>flex</layout>
+      <flex_direction>row</flex_direction>
+      <flex_align>space_between</flex_align>
+      
+      <obj class="lv_label" id="encoders_title">
+        <style_class>screen_title</style_class>
+        <text>Encoders</text>
+        <width>100</width>
+      </obj>
+      
+      <obj class="lv_obj" id="encoders_badge">
+        <style_class>profile_badge_bg</style_class>
+        <width>50</width>
+        <height>28</height>
+        
+        <obj class="lv_label" id="encoders_prof_num">
+          <style_class>profile_number_text</style_class>
+          <text>1</text>
+        </obj>
+      </obj>
+    </obj>
+    
+    <!-- Divider -->
+    <obj class="lv_obj" id="encoders_divider">
+      <width>164</width>
+      <height>1</height>
+      <bg_color>#2a2f4a</bg_color>
+    </obj>
+    
+    <!-- Encoder 1 Section -->
+    <obj class="lv_obj" id="enc1_section">
+      <width>164</width>
+      <height>90</height>
+      <style_class>tile_bg</style_class>
+      <layout>flex</layout>
+      <flex_direction>column</flex_direction>
+      <flex_align>start</flex_align>
+      <pad_all>6</pad_all>
+      <gap>4</gap>
+      
+      <obj class="lv_label" id="enc1_title">
+        <style_class>tile_title</style_class>
+        <text>Encoder 1</text>
+        <height>16</height>
+      </obj>
+      
+      <obj class="lv_label" id="enc1_mode_label">
+        <style_class>screen_label</style_class>
+        <text>Mode:</text>
+        <height>14</height>
+      </obj>
+      
+      <!-- Mode selection with roller -->
+      <obj class="lv_roller" id="enc1_mode_roller">
+        <width>150</width>
+        <height>45</height>
+        <style_class>list_item</style_class>
+        <option id="enc1_opt_volume">
+          <text>🔊 Volume</text>
+        </option>
+        <option id="enc1_opt_mic">
+          <text>🎤 Mic Sensitivity</text>
+        </option>
+        <option id="enc1_opt_timeline">
+          <text>⏱️ Timeline Jog</text>
+        </option>
+        <option id="enc1_opt_zoom">
+          <text>🔍 Zoom</text>
+        </option>
+        <option id="enc1_opt_scroll">
+          <text>🖱️ Scroll</text>
+        </option>
+      </obj>
+      
+      <obj class="lv_label" id="enc1_help">
+        <style_class>status_text</style_class>
+        <text>Press ENC1 to apply</text>
+        <height>12</height>
+      </obj>
+    </obj>
+    
+    <!-- Encoder 2 Section -->
+    <obj class="lv_obj" id="enc2_section">
+      <width>164</width>
+      <height>90</height>
+      <style_class>tile_bg</style_class>
+      <layout>flex</layout>
+      <flex_direction>column</flex_direction>
+      <flex_align>start</flex_align>
+      <pad_all>6</pad_all>
+      <gap>4</gap>
+      
+      <obj class="lv_label" id="enc2_title">
+        <style_class>tile_title</style_class>
+        <text>Encoder 2</text>
+        <height>16</height>
+      </obj>
+      
+      <obj class="lv_label" id="enc2_mode_label">
+        <style_class>screen_label</style_class>
+        <text>Mode:</text>
+        <height>14</height>
+      </obj>
+      
+      <!-- Mode selection with roller -->
+      <obj class="lv_roller" id="enc2_mode_roller">
+        <width>150</width>
+        <height>45</height>
+        <style_class>list_item</style_class>
+        <option id="enc2_opt_volume">
+          <text>🔊 Volume</text>
+        </option>
+        <option id="enc2_opt_mic">
+          <text>🎤 Mic Sensitivity</text>
+        </option>
+        <option id="enc2_opt_timeline">
+          <text>⏱️ Timeline Jog</text>
+        </option>
+        <option id="enc2_opt_zoom">
+          <text>🔍 Zoom</text>
+        </option>
+        <option id="enc2_opt_scroll">
+          <text>🖱️ Scroll</text>
+        </option>
+      </obj>
+      
+      <obj class="lv_label" id="enc2_help">
+        <style_class>status_text</style_class>
+        <text>Press ENC2 to apply</text>
+        <height>12</height>
+      </obj>
+    </obj>
+    
+    <!-- Navigation -->
+    <obj class="lv_label" id="encoders_nav_hint">
+      <style_class>status_text</style_class>
+      <text>[ ] Back    Next [→]</text>
+      <width>164</width>
+      <height>12</height>
+      <text_align>center</text_align>
+    </obj>
+  </obj>
+</screen>

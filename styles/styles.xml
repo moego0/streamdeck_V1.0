@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<styles>
+  <desc>LVGL Pro Theme - Dark and Light modes with accent color support</desc>
+  
+  <!-- ============== COLOR PALETTE ============== -->
+  <colors>
+    <!-- Dark Theme -->
+    <color name="dark_bg">#0a0e27</color>
+    <color name="dark_fg">#e8e8e8</color>
+    <color name="dark_surface">#1a1f3a</color>
+    <color name="dark_border">#2a2f4a</color>
+    
+    <!-- Light Theme -->
+    <color name="light_bg">#f5f5f5</color>
+    <color name="light_fg">#1a1a1a</color>
+    <color name="light_surface">#ffffff</color>
+    <color name="light_border">#e0e0e0</color>
+    
+    <!-- Accent Colors -->
+    <color name="accent_blue">#1e90ff</color>
+    <color name="accent_cyan">#00bfff</color>
+    <color name="accent_green">#00ff7f</color>
+    <color name="accent_orange">#ff8c00</color>
+    <color name="accent_red">#ff1744</color>
+    
+    <!-- Status Colors -->
+    <color name="usb_connected">#00ff7f</color>
+    <color name="usb_disconnected">#ff1744</color>
+    <color name="mic_muted">#ff8c00</color>
+    <color name="mic_active">#00ff7f</color>
+  </colors>
+  
+  <!-- ============== PROFILE BADGE ============== -->
+  <style name="profile_badge_bg">
+    <bg_color>#1e90ff</bg_color>
+    <text_color>#ffffff</text_color>
+    <radius>8</radius>
+    <pad_all>4</pad_all>
+    <border_width>1</border_width>
+    <border_color>#00bfff</border_color>
+  </style>
+  
+  <style name="profile_number_text">
+    <text_color>#ffffff</text_color>
+    <text_font>lv_font_montserrat_18</text_font>
+    <text_align>center</text_align>
+  </style>
+  
+  <!-- ============== STATUS BAR ============== -->
+  <style name="status_bar_bg">
+    <bg_color>#1a1f3a</bg_color>
+    <bg_opa>240</bg_opa>
+    <text_color>#e8e8e8</text_color>
+    <pad_all>4</pad_all>
+    <pad_row>2</pad_row>
+    <pad_column>4</pad_column>
+    <border_width>1</border_width>
+    <border_color>#2a2f4a</border_color>
+  </style>
+  
+  <style name="status_icon">
+    <text_color>#00bfff</text_color>
+    <text_font>lv_font_montserrat_12</text_font>
+    <text_align>center</text_align>
+  </style>
+  
+  <style name="status_text">
+    <text_color>#e8e8e8</text_color>
+    <text_font>lv_font_montserrat_11</text_font>
+    <text_align>center</text_align>
+  </style>
+  
+  <!-- ============== TILE WIDGET ============== -->
+  <style name="tile_bg">
+    <bg_color>#1a1f3a</bg_color>
+    <bg_opa>255</bg_opa>
+    <text_color>#e8e8e8</text_color>
+    <radius>6</radius>
+    <pad_all>8</pad_all>
+    <pad_row>4</pad_row>
+    <pad_column>6</pad_column>
+    <border_width>1</border_width>
+    <border_color>#2a2f4a</border_color>
+  </style>
+  
+  <style name="tile_title">
+    <text_color>#00bfff</text_color>
+    <text_font>lv_font_montserrat_14</text_font>
+    <text_align>left</text_align>
+  </style>
+  
+  <style name="tile_bar">
+    <bg_color>#2a2f4a</bg_color>
+    <indicator_color>#1e90ff</indicator_color>
+    <radius>3</radius>
+  </style>
+  
+  <style name="tile_value_text">
+    <text_color>#e8e8e8</text_color>
+    <text_font>lv_font_montserrat_12</text_font>
+    <text_align>left</text_align>
+  </style>
+  
+  <!-- ============== MACRO KEY SLOTS ============== -->
+  <style name="macro_key_slot">
+    <bg_color>#2a2f4a</bg_color>
+    <bg_opa>200</bg_opa>
+    <radius>4</radius>
+    <pad_all>2</pad_all>
+    <border_width>1</border_width>
+    <border_color>#1e90ff</border_color>
+    <text_color>#e8e8e8</text_color>
+  </style>
+  
+  <style name="macro_key_slot:pressed">
+    <bg_color>#1e90ff</bg_color>
+    <bg_opa>255</bg_opa>
+    <border_color>#00bfff</border_color>
+    <shadow_width>4</shadow_width>
+    <shadow_color>#1e90ff</shadow_color>
+  </style>
+  
+  <style name="key_slot_label">
+    <text_color>#e8e8e8</text_color>
+    <text_font>lv_font_montserrat_10</text_font>
+    <text_align>center</text_align>
+  </style>
+  
+  <style name="key_color_indicator">
+    <bg_color>#1e90ff</bg_color>
+    <radius>2</radius>
+  </style>
+  
+  <!-- ============== SCREENS ============== -->
+  <style name="screen_bg">
+    <bg_color>#0a0e27</bg_color>
+    <text_color>#e8e8e8</text_color>
+  </style>
+  
+  <style name="screen_title">
+    <text_color>#00bfff</text_color>
+    <text_font>lv_font_montserrat_16</text_font>
+    <text_align>center</text_align>
+  </style>
+  
+  <style name="screen_label">
+    <text_color>#e8e8e8</text_color>
+    <text_font>lv_font_montserrat_13</text_font>
+  </style>
+  
+  <!-- ============== BUTTONS ============== -->
+  <style name="btn_primary">
+    <bg_color>#1e90ff</bg_color>
+    <text_color>#ffffff</text_color>
+    <text_font>lv_font_montserrat_12</text_font>
+    <radius>6</radius>
+    <pad_all>8</pad_all>
+    <border_width>1</border_width>
+    <border_color>#00bfff</border_color>
+  </style>
+  
+  <style name="btn_primary:pressed">
+    <bg_color>#00bfff</bg_color>
+    <shadow_width>3</shadow_width>
+    <shadow_color>#1e90ff</shadow_color>
+  </style>
+  
+  <style name="btn_secondary">
+    <bg_color>#2a2f4a</bg_color>
+    <text_color>#e8e8e8</text_color>
+    <text_font>lv_font_montserrat_11</text_font>
+    <radius>4</radius>
+    <pad_all>6</pad_all>
+  </style>
+  
+  <!-- ============== LISTS ============== -->
+  <style name="list_item">
+    <bg_color>#1a1f3a</bg_color>
+    <text_color>#e8e8e8</text_color>
+    <text_font>lv_font_montserrat_12</text_font>
+    <pad_all>6</pad_all>
+    <border_width>0</border_width>
+  </style>
+  
+  <style name="list_item:selected">
+    <bg_color>#1e90ff</bg_color>
+    <text_color>#ffffff</text_color>
+    <radius>4</radius>
+    <border_width>2</border_width>
+    <border_color>#00bfff</border_color>
+  </style>
+  
+  <!-- ============== SLIDERS ============== -->
+  <style name="slider_main">
+    <bg_color>#2a2f4a</bg_color>
+    <indicator_color>#1e90ff</indicator_color>
+    <radius>6</radius>
+  </style>
+  
+  <!-- ============== QUICK OVERLAY ============== -->
+  <style name="overlay_bg">
+    <bg_color>#0a0e27</bg_color>
+    <bg_opa>200</bg_opa>
+    <radius>8</radius>
+    <pad_all>12</pad_all>
+    <border_width>2</border_width>
+    <border_color>#1e90ff</border_color>
+    <shadow_width>4</shadow_width>
+    <shadow_color>#1e90ff</shadow_color>
+  </style>
+  
+  <style name="overlay_text">
+    <text_color>#00bfff</text_color>
+    <text_font>lv_font_montserrat_14</text_font>
+    <text_align>center</text_align>
+  </style>
+  
+</styles>

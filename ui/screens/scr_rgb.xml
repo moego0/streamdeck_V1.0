@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen>
+  <name>RGB & Theme Settings</name>
+  <description>Configure LED theme, colors, and brightness</description>
+  <size width="172" height="320"/>
+  <bg_color>#0a0e27</bg_color>
+  
+  <!-- Main Container -->
+  <obj class="lv_obj" id="rgb_main">
+    <layout>flex</layout>
+    <flex_direction>column</flex_direction>
+    <flex_align>start</flex_align>
+    <width>172</width>
+    <height>320</height>
+    <pad_all>4</pad_all>
+    
+    <!-- Header -->
+    <obj class="lv_obj" id="rgb_header">
+      <width>164</width>
+      <height>32</height>
+      <layout>flex</layout>
+      <flex_direction>row</flex_direction>
+      <flex_align>space_between</flex_align>
+      
+      <obj class="lv_label" id="rgb_title">
+        <style_class>screen_title</style_class>
+        <text>RGB Settings</text>
+        <width>100</width>
+      </obj>
+      
+      <obj class="lv_obj" id="rgb_badge">
+        <style_class>profile_badge_bg</style_class>
+        <width>50</width>
+        <height>28</height>
+        
+        <obj class="lv_label" id="rgb_prof_num">
+          <style_class>profile_number_text</style_class>
+          <text>1</text>
+        </obj>
+      </obj>
+    </obj>
+    
+    <!-- Divider -->
+    <obj class="lv_obj" id="rgb_divider">
+      <width>164</width>
+      <height>1</height>
+      <bg_color>#2a2f4a</bg_color>
+    </obj>
+    
+    <!-- Theme Selection -->
+    <obj class="lv_obj" id="theme_section">
+      <width>164</width>
+      <height>60</height>
+      <style_class>tile_bg</style_class>
+      <layout>flex</layout>
+      <flex_direction>column</flex_direction>
+      <flex_align>start</flex_align>
+      <pad_all>6</pad_all>
+      <gap>4</gap>
+      
+      <obj class="lv_label" id="theme_label">
+        <style_class>tile_title</style_class>
+        <text>Display Theme</text>
+        <height>16</height>
+      </obj>
+      
+      <obj class="lv_btnmatrix" id="theme_buttons">
+        <width>150</width>
+        <height>32</height>
+        <one_checked>true</one_checked>
+        
+        <button id="theme_dark">
+          <text>Dark</text>
+          <style_class>btn_primary</style_class>
+        </button>
+        
+        <button id="theme_light">
+          <text>Light</text>
+          <style_class>btn_secondary</style_class>
+        </button>
+      </obj>
+    </obj>
+    
+    <!-- Accent Color Selection -->
+    <obj class="lv_obj" id="accent_section">
+      <width>164</width>
+      <height>85</height>
+      <style_class>tile_bg</style_class>
+      <layout>flex</layout>
+      <flex_direction>column</flex_direction>
+      <flex_align>start</flex_align>
+      <pad_all>6</pad_all>
+      <gap>4</gap>
+      
+      <obj class="lv_label" id="accent_label">
+        <style_class>tile_title</style_class>
+        <text>Accent Color</text>
+        <height>16</height>
+      </obj>
+      
+      <obj class="lv_btnmatrix" id="accent_colors">
+        <width>150</width>
+        <height>55</height>
+        
+        <button id="accent_blue">
+          <text>● Blue</text>
+          <bg_color>#1e90ff</bg_color>
+          <style_class>btn_primary</style_class>
+        </button>
+        
+        <button id="accent_cyan">
+          <text>● Cyan</text>
+          <bg_color>#00bfff</bg_color>
+          <style_class>btn_secondary</style_class>
+        </button>
+        
+        <button id="accent_green">
+          <text>● Green</text>
+          <bg_color>#00ff7f</bg_color>
+          <style_class>btn_secondary</style_class>
+        </button>
+        
+        <button id="accent_orange">
+          <text>● Orange</text>
+          <bg_color>#ff8c00</bg_color>
+          <style_class>btn_secondary</style_class>
+        </button>
+        
+        <button id="accent_red">
+          <text>● Red</text>
+          <bg_color>#ff1744</bg_color>
+          <style_class>btn_secondary</style_class>
+        </button>
+      </obj>
+    </obj>
+    
+    <!-- Brightness Control -->
+    <obj class="lv_obj" id="brightness_section">
+      <width>164</width>
+      <height>50</height>
+      <style_class>tile_bg</style_class>
+      <layout>flex</layout>
+      <flex_direction>column</flex_direction>
+      <flex_align>start</flex_align>
+      <pad_all>6</pad_all>
+      <gap>4</gap>
+      
+      <obj class="lv_label" id="brightness_label">
+        <style_class>tile_title</style_class>
+        <text>LED Brightness</text>
+        <height>16</height>
+      </obj>
+      
+      <obj class="lv_slider" id="brightness_slider">
+        <style_class>slider_main</style_class>
+        <width>150</width>
+        <height>12</height>
+        <min_value>0</min_value>
+        <max_value>100</max_value>
+        <value>100</value>
+      </obj>
+      
+      <obj class="lv_label" id="brightness_value">
+        <style_class>tile_value_text</style_class>
+        <text>100%</text>
+        <height>12</height>
+      </obj>
+    </obj>
+    
+    <!-- Navigation -->
+    <obj class="lv_label" id="rgb_nav_hint">
+      <style_class>status_text</style_class>
+      <text>[ ] Back  Apply [→]</text>
+      <width>164</width>
+      <height>12</height>
+      <text_align>center</text_align>
+    </obj>
+  </obj>
+</screen>

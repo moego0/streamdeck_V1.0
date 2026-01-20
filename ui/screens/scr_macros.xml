@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen>
+  <name>Macro Grid</name>
+  <description>10-key macro layout (2x5 grid) with labels and color indicators</description>
+  <size width="172" height="320"/>
+  <bg_color>#0a0e27</bg_color>
+  
+  <!-- Main Container -->
+  <obj class="lv_obj" id="macros_main">
+    <layout>flex</layout>
+    <flex_direction>column</flex_direction>
+    <flex_align>start</flex_align>
+    <width>172</width>
+    <height>320</height>
+    <pad_all>4</pad_all>
+    
+    <!-- Header -->
+    <obj class="lv_obj" id="macros_header">
+      <width>164</width>
+      <height>32</height>
+      <layout>flex</layout>
+      <flex_direction>row</flex_direction>
+      <flex_align>space_between</flex_align>
+      
+      <obj class="lv_label" id="macros_title">
+        <style_class>screen_title</style_class>
+        <text>Macro Keys</text>
+        <width>100</width>
+      </obj>
+      
+      <obj class="lv_obj" id="macros_badge">
+        <style_class>profile_badge_bg</style_class>
+        <width>50</width>
+        <height>28</height>
+        
+        <obj class="lv_label" id="macros_prof_num">
+          <style_class>profile_number_text</style_class>
+          <text>1</text>
+        </obj>
+      </obj>
+    </obj>
+    
+    <!-- Divider -->
+    <obj class="lv_obj" id="macros_divider">
+      <width>164</width>
+      <height>1</height>
+      <bg_color>#2a2f4a</bg_color>
+    </obj>
+    
+    <!-- Key Grid (2x5) -->
+    <obj class="lv_obj" id="key_grid">
+      <width>164</width>
+      <height>210</height>
+      <layout>grid</layout>
+      <grid_column_count>5</grid_column_count>
+      <grid_row_count>2</grid_row_count>
+      <pad_all>2</pad_all>
+      <gap>3</gap>
+      
+      <!-- Key 0 (Row 0, Col 0) -->
+      <obj class="lv_btn" id="key_0">
+        <style_class>macro_key_slot</style_class>
+        <width>32</width>
+        <height>100</height>
+        <layout>flex</layout>
+        <flex_direction>column</flex_direction>
+        <flex_align>center</flex_align>
+        
+        <obj class="lv_label" id="key_0_label">
+          <style_class>key_slot_label</style_class>
+          <text>F1</text>
+        </obj>
+        
+        <obj class="lv_obj" id="key_0_color">
+          <style_class>key_color_indicator</style_class>
+          <bg_color>#ff1744</bg_color>
+        </obj>
+      </obj>
+      
+      <!-- Key 1 -->
+      <obj class="lv_btn" id="key_1">
+        <style_class>macro_key_slot</style_class>
+        <width>32</width>
+        <height>100</height>
+        <layout>flex</layout>
+        <flex_direction>column</flex_direction>
+        <flex_align>center</flex_align>
+        
+        <obj class="lv_label" id="key_1_label">
+          <style_class>key_slot_label</style_class>
+          <text>F2</text>
+        </obj>
+        
+        <obj class="lv_obj" id="key_1_color">
+          <style_class>key_color_indicator</style_class>
+          <bg_color>#ff8c00</bg_color>
+        </obj>
+      </obj>
+      
+      <!-- Key 2 -->
+      <obj class="lv_btn" id="key_2">
+        <style_class>macro_key_slot</style_class>
+        <width>32</width>
+        <height>100</height>
+        <layout>flex</layout>
+        <flex_direction>column</flex_direction>
+        <flex_align>center</flex_align>
+        
+        <obj class="lv_label" id="key_2_label">
+          <style_class>key_slot_label</style_class>
+          <text>F3</text>
+        </obj>
+        
+        <obj class="lv_obj" id="key_2_color">
+          <style_class>key_color_indicator</style_class>
+          <bg_color>#00ff7f</bg_color>
+        </obj>
+      </obj>
+      
+      <!-- Key 3 -->
+      <obj class="lv_btn" id="key_3">
+        <style_class>macro_key_slot</style_class>
+        <width>32</width>
+        <height>100</height>
+        <layout>flex</layout>
+        <flex_direction>column</flex_direction>
+        <flex_align>center</flex_align>
+        
+        <obj class="lv_label" id="key_3_label">
+          <style_class>key_slot_label</style_class>
+          <text>F4</text>
+        </obj>
+        
+        <obj class="lv_obj" id="key_3_color">
+          <style_class>key_color_indicator</style_class>
+          <bg_color>#00bfff</bg_color>
+        </obj>
+      </obj>
+      
+      <!-- Key 4 -->
+      <obj class="lv_btn" id="key_4">
+        <style_class>macro_key_slot</style_class>
+        <width>32</width>
+        <height>100</height>
+        <layout>flex</layout>
+        <flex_direction>column</flex_direction>
+        <flex_align>center</flex_align>
+        
+        <obj class="lv_label" id="key_4_label">
+          <style_class>key_slot_label</style_class>
+          <text>F5</text>
+        </obj>
+        
+        <obj class="lv_obj" id="key_4_color">
+          <style_class>key_color_indicator</style_class>
+          <bg_color>#1e90ff</bg_color>
+        </obj>
+      </obj>
+      
+      <!-- Key 5 (Row 1, Col 0) -->
+      <obj class="lv_btn" id="key_5">
+        <style_class>macro_key_slot</style_class>
+        <width>32</width>
+        <height>100</height>
+        <layout>flex</layout>
+        <flex_direction>column</flex_direction>
+        <flex_align>center</flex_align>
+        
+        <obj class="lv_label" id="key_5_label">
+          <style_class>key_slot_label</style_class>
+          <text>F6</text>
+        </obj>
+        
+        <obj class="lv_obj" id="key_5_color">
+          <style_class>key_color_indicator</style_class>
+          <bg_color>#ff1744</bg_color>
+        </obj>
+      </obj>
+      
+      <!-- Key 6 -->
+      <obj class="lv_btn" id="key_6">
+        <style_class>macro_key_slot</style_class>
+        <width>32</width>
+        <height>100</height>
+        <layout>flex</layout>
+        <flex_direction>column</flex_direction>
+        <flex_align>center</flex_align>
+        
+        <obj class="lv_label" id="key_6_label">
+          <style_class>key_slot_label</style_class>
+          <text>F7</text>
+        </obj>
+        
+        <obj class="lv_obj" id="key_6_color">
+          <style_class>key_color_indicator</style_class>
+          <bg_color>#ff8c00</bg_color>
+        </obj>
+      </obj>
+      
+      <!-- Key 7 -->
+      <obj class="lv_btn" id="key_7">
+        <style_class>macro_key_slot</style_class>
+        <width>32</width>
+        <height>100</height>
+        <layout>flex</layout>
+        <flex_direction>column</flex_direction>
+        <flex_align>center</flex_align>
+        
+        <obj class="lv_label" id="key_7_label">
+          <style_class>key_slot_label</style_class>
+          <text>F8</text>
+        </obj>
+        
+        <obj class="lv_obj" id="key_7_color">
+          <style_class>key_color_indicator</style_class>
+          <bg_color>#00ff7f</bg_color>
+        </obj>
+      </obj>
+      
+      <!-- Key 8 -->
+      <obj class="lv_btn" id="key_8">
+        <style_class>macro_key_slot</style_class>
+        <width>32</width>
+        <height>100</height>
+        <layout>flex</layout>
+        <flex_direction>column</flex_direction>
+        <flex_align>center</flex_align>
+        
+        <obj class="lv_label" id="key_8_label">
+          <style_class>key_slot_label</style_class>
+          <text>F9</text>
+        </obj>
+        
+        <obj class="lv_obj" id="key_8_color">
+          <style_class>key_color_indicator</style_class>
+          <bg_color>#00bfff</bg_color>
+        </obj>
+      </obj>
+      
+      <!-- Key 9 -->
+      <obj class="lv_btn" id="key_9">
+        <style_class>macro_key_slot</style_class>
+        <width>32</width>
+        <height>100</height>
+        <layout>flex</layout>
+        <flex_direction>column</flex_direction>
+        <flex_align>center</flex_align>
+        
+        <obj class="lv_label" id="key_9_label">
+          <style_class>key_slot_label</style_class>
+          <text>F10</text>
+        </obj>
+        
+        <obj class="lv_obj" id="key_9_color">
+          <style_class>key_color_indicator</style_class>
+          <bg_color>#1e90ff</bg_color>
+        </obj>
+      </obj>
+    </obj>
+    
+    <!-- Last Pressed Indicator -->
+    <obj class="lv_label" id="macros_last_pressed">
+      <style_class>screen_label</style_class>
+      <text>Last: F1 (Copy)</text>
+      <width>164</width>
+      <height>14</height>
+    </obj>
+    
+    <!-- Navigation -->
+    <obj class="lv_label" id="macros_nav_hint">
+      <style_class>status_text</style_class>
+      <text>[ ] Back    Menu [→]</text>
+      <width>164</width>
+      <height>12</height>
+      <text_align>center</text_align>
+    </obj>
+  </obj>
+</screen>
