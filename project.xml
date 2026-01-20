@@ -1,0 +1,13 @@
+<project>
+  <folders>
+  </folders>
+
+  <targets>
+    <target name="streamdeck_st7789">
+      <display width="172" height="320" color_format="RGB565"/>
+      <memory name="int_ram" size="128K"/>
+      <memory name="int_flash" size="512K"/>
+      <memory name="ext_flash" size="8M"/>
+    </target>
+  </targets>
+</project>
