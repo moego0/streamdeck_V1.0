@@ -1,24 +1,35 @@
 <screen>
-  <view styles="screen_root" width="172" height="320">
-    <cmp_status_bar profile_num="1" title="ENCODERS" right_text="BACK" align="top_mid"/>
+	<view style_bg_color="0x0b1020" style_pad_all="0">
+		<cmp_status_bar profile_num="1" title="ENCODERS" right_text="P1" align="top_mid" />
 
-    <lv_obj styles="panel"
-            width="156" height="260"
-            align="bottom_mid"
-            y="-8">
+		<lv_obj
+			width="156"
+			height="66"
+			align="top_mid"
+			y="40"
+			style_bg_color="0x1b2338"
+			style_radius="12"
+			style_pad_left="10"
+			style_pad_top="10"
+		>
+			<lv_label text="ENC1: Volume" align="top_left" style_text_color="0xffffff" />
+			<lv_label text="Turn = +/-   Press = Mute" align="top_left" y="22" style_text_color="0x9aa4b2" />
+		</lv_obj>
 
-      <lv_label text="ENC 1: Volume" align="top_left" styles="text_title"/>
-      <lv_bar id="bar_enc1" width="136" height="10" align="top_left" y="22"/>
+		<lv_obj
+			width="156"
+			height="66"
+			align="top_mid"
+			y="116"
+			style_bg_color="0x1b2338"
+			style_radius="12"
+			style_pad_left="10"
+			style_pad_top="10"
+		>
+			<lv_label text="ENC2: Zoom/Timeline" align="top_left" style_text_color="0xffffff" />
+			<lv_label text="Turn = zoom   Press = reset" align="top_left" y="22" style_text_color="0x9aa4b2" />
+		</lv_obj>
 
-      <lv_label text="ENC 2: Zoom" align="top_left" y="48" styles="text_title"/>
-      <lv_bar id="bar_enc2" width="136" height="10" align="top_left" y="70"/>
-
-      <lv_label text="BTN: Mic Mute" align="top_left" y="100" styles="text_title"/>
-
-      <lv_switch id="sw_mic" align="top_left" y="122"/>
-      <lv_label text="Toggle" align="top_left" y="150" styles="text_muted"/>
-
-      <lv_label text="Tip: press encoder to switch mode" align="bottom_left" styles="text_muted"/>
-    </lv_obj>
-  </view>
+		<lv_label text="(You can change these from PC app later)" align="top_mid" y="206" style_text_color="0x667085" />
+	</view>
 </screen>

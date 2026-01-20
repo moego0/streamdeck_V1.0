@@ -1,19 +1,9 @@
 <screen>
-  <view styles="screen_root" width="172" height="320">
-    <lv_obj styles="panel"
-            width="156" height="120"
-            align="center">
-
-      <lv_label text="QUICK" align="top_left" styles="text_title"/>
-      <lv_label text="Volume" align="top_left" y="26" styles="text_muted"/>
-
-      <lv_slider id="sld_quick_vol"
-                 width="136" height="18"
-                 align="top_left"
-                 y="44"/>
-
-      <lv_label text="Mic" align="top_left" y="76" styles="text_muted"/>
-      <lv_switch id="sw_quick_mic" align="top_left" y="92"/>
-    </lv_obj>
-  </view>
+	<view style_bg_color="0x000000" style_pad_all="0">
+		<lv_obj width="156" height="120" align="center" style_bg_color="0x10162a" style_radius="14" style_pad_all="12">
+			<lv_label text="OVERLAY" align="top_mid" style_text_color="0xffffff" />
+			<lv_label text="VOL: 50%" align="center" style_text_color="0xffffff" />
+			<lv_label text="MIC: ON" align="bottom_mid" y="-8" style_text_color="0x9aa4b2" />
+		</lv_obj>
+	</view>
 </screen>

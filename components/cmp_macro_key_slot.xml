@@ -1,21 +1,12 @@
 <component>
-  <api>
-    <prop name="label" type="string" default="1"/>
-    <prop name="color" type="color" default="0xff3b30"/>
-  </api>
+	<api>
+		<prop name="label" type="string" default="1" />
+		<prop name="color" type="int" default="0x1f6feb" />
+	</api>
 
-  <view extends="lv_button"
-        styles="btn_primary"
-        width="76" height="46"
-        style_pad_all="0">
+	<view extends="lv_button" width="76" height="46" style_pad_all="0" style_radius="10" style_bg_color="0x1b2338">
+		<lv_label text="$label" align="center" style_text_color="0xffffff" />
 
-    <lv_label text="$label" align="center" styles="text_title"/>
-
-    <lv_obj width="100%" height="4"
-            align="bottom_mid"
-            style_bg_color="$color"
-            style_bg_opa="255"
-            style_pad_all="0"
-            style_radius="0"/>
-  </view>
+		<lv_obj width="76" height="4" align="bottom_mid" style_bg_color="$color" style_radius="0" />
+	</view>
 </component>

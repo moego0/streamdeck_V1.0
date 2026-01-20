@@ -1,18 +1,22 @@
 <component>
-  <api>
-    <prop name="title" type="string" default="TITLE"/>
-    <prop name="subtitle" type="string" default=""/>
-  </api>
+	<api>
+		<prop name="title" type="string" default="Title" />
+		<prop name="subtitle" type="string" default="Subtitle" />
+	</api>
 
-  <view extends="lv_button"
-        styles="btn_primary"
-        width="156" height="44"
-        style_pad_left="10"
-        style_pad_right="10"
-        style_pad_top="6"
-        style_pad_bottom="6">
+	<view
+		extends="lv_button"
+		width="156"
+		height="44"
+		style_bg_color="0x1b2338"
+		style_radius="12"
+		style_pad_left="10"
+		style_pad_right="10"
+		style_pad_top="6"
+		style_pad_bottom="6"
+	>
+		<lv_label text="$title" align="left_mid" y="-8" style_text_color="0xffffff" />
 
-    <lv_label text="$title" align="left_mid" y="-8" styles="text_title"/>
-    <lv_label text="$subtitle" align="left_mid" y="10" styles="text_muted"/>
-  </view>
+		<lv_label text="$subtitle" align="left_mid" y="10" style_text_color="0x9aa4b2" />
+	</view>
 </component>

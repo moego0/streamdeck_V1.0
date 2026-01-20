@@ -1,44 +1,12 @@
 <screen>
-  <view styles="screen_root" width="172" height="320">
-    <cmp_status_bar id="status"
-                    profile_num="1"
-                    title="HOME"
-                    right_text="USB"
-                    align="top_mid"/>
+	<view style_bg_color="0x0b1020" style_pad_all="0">
+		<cmp_status_bar profile_num="1" title="STREAM DECK" right_text="USB" align="top_mid" />
 
-    <lv_obj id="keys"
-            width="172" height="260"
-            align="top_left"
-            y="32"
-            style_bg_opa="0"
-            style_pad_all="0">
+		<cmp_tile_button title="MACROS" subtitle="Keys / shortcuts" align="top_mid" y="40" />
+		<cmp_tile_button title="RGB" subtitle="Color / brightness" align="top_mid" y="94" />
+		<cmp_tile_button title="ENCODERS" subtitle="Knob functions" align="top_mid" y="148" />
+		<cmp_tile_button title="PROFILES" subtitle="Load / save" align="top_mid" y="202" />
 
-      <cmp_macro_key_slot id="key0" label="1" color="0xff3b30" x="8"  y="0"/>
-      <cmp_macro_key_slot id="key1" label="2" color="0xff9500" x="88" y="0"/>
-
-      <cmp_macro_key_slot id="key2" label="3" color="0xffcc00" x="8"  y="52"/>
-      <cmp_macro_key_slot id="key3" label="4" color="0x34c759" x="88" y="52"/>
-
-      <cmp_macro_key_slot id="key4" label="5" color="0x00c7be" x="8"  y="104"/>
-      <cmp_macro_key_slot id="key5" label="6" color="0x007aff" x="88" y="104"/>
-
-      <cmp_macro_key_slot id="key6" label="7" color="0x5856d6" x="8"  y="156"/>
-      <cmp_macro_key_slot id="key7" label="8" color="0xaf52de" x="88" y="156"/>
-
-      <cmp_macro_key_slot id="key8" label="9" color="0xff2d55" x="8"  y="208"/>
-      <cmp_macro_key_slot id="key9" label="10" color="0xa2845e" x="88" y="208"/>
-    </lv_obj>
-
-    <lv_obj id="footer"
-            width="172" height="28"
-            align="bottom_mid"
-            style_bg_opa="0"
-            style_pad_all="0">
-
-      <lv_label id="hint"
-                text="BTN1: MACROS  BTN2: RGB  BTN3: PROFILES"
-                align="center"
-                styles="text_muted"/>
-    </lv_obj>
-  </view>
+		<lv_label text="Tip: press encoder for overlay" align="top_mid" y="292" style_text_color="0x667085" />
+	</view>
 </screen>
