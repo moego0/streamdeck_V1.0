@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<component>
+  <api>
+    <prop name="profile_num" type="string" default="1"/>
+  </api>
+  <view extends="lv_obj" width="58" height="20">
+    <style name="st_badge"/>
+    <lv_label text="PROF $profile_num" align="center">
+      <style name="st_text"/>
+    </lv_label>
+  </view>
+</component>

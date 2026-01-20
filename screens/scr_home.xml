@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<screen>
+  <view>
+    <lv_obj width="100%" height="100%">
+      <style name="st_root"/>
+      <cmp_status_bar profile_num="1" right_text="USB"/>
+      <lv_obj width="100%" height="250" align="top_mid" y="32" flex_flow="column" style_pad_row="8" style_bg_opa="0">
+        <lv_label text="STREAM DECK" align="top_left">
+          <style name="st_text"/>
+        </lv_label>
+        <lv_button width="100%" height="52">
+          <style name="st_panel"/>
+          <lv_label text="Macros" align="center"><style name="st_text"/></lv_label>
+          <screen_load_event screen="scr_macros" trigger="clicked" anim_type="fade"/>
+        </lv_button>
+        <lv_button width="100%" height="52">
+          <style name="st_panel"/>
+          <lv_label text="RGB" align="center"><style name="st_text"/></lv_label>
+          <screen_load_event screen="scr_rgb" trigger="clicked" anim_type="fade"/>
+        </lv_button>
+        <lv_button width="100%" height="52">
+          <style name="st_panel"/>
+          <lv_label text="Profiles" align="center"><style name="st_text"/></lv_label>
+          <screen_load_event screen="scr_profiles" trigger="clicked" anim_type="fade"/>
+        </lv_button>
+        <lv_button width="100%" height="52">
+          <style name="st_panel"/>
+          <lv_label text="Encoders" align="center"><style name="st_text"/></lv_label>
+          <screen_load_event screen="scr_encoders" trigger="clicked" anim_type="fade"/>
+        </lv_button>
+      </lv_obj>
+    </lv_obj>
+  </view>
+</screen>

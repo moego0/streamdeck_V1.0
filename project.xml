@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <folders>
+    <folder path="https://github.com/lvgl/lvgl_editor/tree/master/examples"/>
+  </folders>
+  <targets>
+    <target name="streamdeck_st7789_172x320">
+      <display width="172" height="320" color_format="RGB565"/>
+      <memory name="int_ram" size="128K"/>
+      <memory name="int_flash" size="512K"/>
+      <memory name="ext_flash" size="8M"/>
+    </target>
+  </targets>
+  <defs>
+    <consts>
+      <const name="c_bg" value="0x101218" type="color"/>
+      <const name="c_panel" value="0x1a1f2e" type="color"/>
+      <const name="c_text" value="0xe8e8e8" type="color"/>
+      <const name="c_dim" value="0x8a8a9e" type="color"/>
+      <const name="c_accent" value="0x4c7dff" type="color"/>
+    </consts>
+    <styles>
+      <style name="st_root">
+        <property name="bg_color" value="0x101218"/>
+        <property name="text_color" value="0xe8e8e8"/>
+        <property name="pad_all" value="0"/>
+        <property name="pad_gap" value="0"/>
+        <property name="border_width" value="0"/>
+      </style>
+      <style name="st_panel">
+        <property name="bg_color" value="0x1a1f2e"/>
+        <property name="border_color" value="0x2d3448"/>
+        <property name="border_width" value="1"/>
+        <property name="radius" value="4"/>
+        <property name="pad_all" value="8"/>
+      </style>
+      <style name="st_btn_macro">
+        <property name="bg_color" value="0x1a1f2e"/>
+        <property name="border_color" value="0x4c7dff"/>
+        <property name="border_width" value="2"/>
+        <property name="radius" value="4"/>
+        <property name="pad_all" value="8"/>
+      </style>
+      <style name="st_badge">
+        <property name="bg_color" value="0x0d0f18"/>
+        <property name="border_color" value="0x4c7dff"/>
+        <property name="border_width" value="1"/>
+        <property name="radius" value="3"/>
+        <property name="pad_all" value="4"/>
+      </style>
+      <style name="st_text">
+        <property name="text_color" value="0xe8e8e8"/>
+        <property name="text_font" value="montserrat_14"/>
+      </style>
+      <style name="st_text_dim">
+        <property name="text_color" value="0x8a8a9e"/>
+        <property name="text_font" value="montserrat_12"/>
+      </style>
+    </styles>
+  </defs>
+</project>
