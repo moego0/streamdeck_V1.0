@@ -1,31 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <screen>
-  <view>
-    <lv_obj width="100%" height="100%">
-      <style name="st_root"/>
-      <cmp_status_bar profile_num="1" right_text="PROFILES"/>
-      <lv_obj width="100%" height="280" align="top_mid" y="32" flex_flow="column" style_pad_row="8" style_bg_opa="0">
-        <lv_button width="100%" height="44">
-          <style name="st_panel"/>
-          <lv_label text="Profile 1" align="center"><style name="st_text"/></lv_label>
-          <screen_load_event screen="scr_home" trigger="clicked" anim_type="fade"/>
-        </lv_button>
-        <lv_button width="100%" height="44">
-          <style name="st_panel"/>
-          <lv_label text="Profile 2" align="center"><style name="st_text"/></lv_label>
-          <screen_load_event screen="scr_home" trigger="clicked" anim_type="fade"/>
-        </lv_button>
-        <lv_button width="100%" height="44">
-          <style name="st_panel"/>
-          <lv_label text="Profile 3" align="center"><style name="st_text"/></lv_label>
-          <screen_load_event screen="scr_home" trigger="clicked" anim_type="fade"/>
-        </lv_button>
-        <lv_button width="100%" height="44">
-          <style name="st_panel"/>
-          <lv_label text="Back" align="center"><style name="st_text"/></lv_label>
-          <screen_load_event screen="scr_home" trigger="clicked" anim_type="fade"/>
-        </lv_button>
-      </lv_obj>
+  <view styles="screen_root" width="172" height="320">
+    <cmp_status_bar profile_num="1" title="PROFILES" right_text="BACK" align="top_mid"/>
+
+    <lv_obj width="172" height="276"
+            align="bottom_mid"
+            style_bg_opa="0"
+            style_pad_all="0">
+
+      <cmp_tile_button id="p1" title="Profile 1" subtitle="Default" align="top_mid" y="6"/>
+      <cmp_tile_button id="p2" title="Profile 2" subtitle="OBS" align="top_mid" y="56"/>
+      <cmp_tile_button id="p3" title="Profile 3" subtitle="Editing" align="top_mid" y="106"/>
+      <cmp_tile_button id="p4" title="Profile 4" subtitle="Gaming" align="top_mid" y="156"/>
+      <cmp_tile_button id="p5" title="Profile 5" subtitle="Custom" align="top_mid" y="206"/>
     </lv_obj>
   </view>
 </screen>
