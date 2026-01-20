@@ -1,22 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <screen>
-  <view>
-    <lv_obj width="100%" height="100%">
-      <style name="st_root"/>
-      <cmp_status_bar profile_num="1" right_text="RGB"/>
-      <lv_obj width="100%" height="280" align="top_mid" y="32" flex_flow="column" style_pad_row="10" style_bg_opa="0">
-        <lv_label text="Brightness"><style name="st_text"/></lv_label>
-        <lv_slider width="100%" height="16" value="60"/>
-        <lv_label text="Hue"><style name="st_text"/></lv_label>
-        <lv_slider width="100%" height="16" value="180"/>
-        <lv_label text="Saturation"><style name="st_text"/></lv_label>
-        <lv_slider width="100%" height="16" value="90"/>
-        <lv_button width="100%" height="44">
-          <style name="st_panel"/>
-          <lv_label text="Back" align="center"><style name="st_text"/></lv_label>
-          <screen_load_event screen="scr_home" trigger="clicked" anim_type="fade"/>
-        </lv_button>
-      </lv_obj>
+  <view styles="screen_root" width="172" height="320">
+    <cmp_status_bar profile_num="1" title="RGB" right_text="BACK" align="top_mid"/>
+
+    <lv_obj styles="panel"
+            width="156" height="260"
+            align="bottom_mid"
+            y="-8">
+
+      <lv_label text="Brightness" align="top_left" styles="text_title"/>
+
+      <lv_slider id="sld_brightness"
+                 width="136" height="18"
+                 align="top_left"
+                 y="26"
+                 style_pad_all="0"/>
+
+      <lv_label text="Presets" align="top_left" y="58" styles="text_title"/>
+
+      <lv_button id="c1" width="68" height="34" x="0"  y="84"  styles="btn_primary">
+        <lv_obj width="100%" height="4" align="bottom_mid" style_bg_color="0xff3b30" style_bg_opa="255"/>
+        <lv_label text="Red" align="center" styles="text_title"/>
+      </lv_button>
+
+      <lv_button id="c2" width="68" height="34" x="78" y="84" styles="btn_primary">
+        <lv_obj width="100%" height="4" align="bottom_mid" style_bg_color="0x34c759" style_bg_opa="255"/>
+        <lv_label text="Green" align="center" styles="text_title"/>
+      </lv_button>
+
+      <lv_button id="c3" width="68" height="34" x="0"  y="126" styles="btn_primary">
+        <lv_obj width="100%" height="4" align="bottom_mid" style_bg_color="0x007aff" style_bg_opa="255"/>
+        <lv_label text="Blue" align="center" styles="text_title"/>
+      </lv_button>
+
+      <lv_button id="c4" width="68" height="34" x="78" y="126" styles="btn_primary">
+        <lv_obj width="100%" height="4" align="bottom_mid" style_bg_color="0xff9500" style_bg_opa="255"/>
+        <lv_label text="Orange" align="center" styles="text_title"/>
+      </lv_button>
+
+      <lv_button id="c5" width="68" height="34" x="0"  y="168" styles="btn_primary">
+        <lv_obj width="100%" height="4" align="bottom_mid" style_bg_color="0xaf52de" style_bg_opa="255"/>
+        <lv_label text="Purple" align="center" styles="text_title"/>
+      </lv_button>
+
+      <lv_button id="c6" width="68" height="34" x="78" y="168" styles="btn_primary">
+        <lv_obj width="100%" height="4" align="bottom_mid" style_bg_color="0x9aa0b5" style_bg_opa="255"/>
+        <lv_label text="Dim" align="center" styles="text_title"/>
+      </lv_button>
     </lv_obj>
   </view>
 </screen>
