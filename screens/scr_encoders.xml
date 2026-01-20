@@ -1,26 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <screen>
-  <view>
-    <lv_obj width="100%" height="100%">
-      <style name="st_root"/>
-      <cmp_status_bar profile_num="1" right_text="ENCODERS"/>
-      <lv_obj width="100%" height="280" align="top_mid" y="32" flex_flow="column" style_pad_row="10" style_bg_opa="0">
-        <lv_obj width="100%" height="70">
-          <style name="st_panel"/>
-          <lv_label text="Encoder 1: Volume" align="top_left"><style name="st_text"/></lv_label>
-          <lv_label text="Press: Mute" align="bottom_left"><style name="st_text_dim"/></lv_label>
-        </lv_obj>
-        <lv_obj width="100%" height="70">
-          <style name="st_panel"/>
-          <lv_label text="Encoder 2: Timeline" align="top_left"><style name="st_text"/></lv_label>
-          <lv_label text="Press: Play/Pause" align="bottom_left"><style name="st_text_dim"/></lv_label>
-        </lv_obj>
-        <lv_button width="100%" height="44">
-          <style name="st_panel"/>
-          <lv_label text="Back" align="center"><style name="st_text"/></lv_label>
-          <screen_load_event screen="scr_home" trigger="clicked" anim_type="fade"/>
-        </lv_button>
-      </lv_obj>
+  <view styles="screen_root" width="172" height="320">
+    <cmp_status_bar profile_num="1" title="ENCODERS" right_text="BACK" align="top_mid"/>
+
+    <lv_obj styles="panel"
+            width="156" height="260"
+            align="bottom_mid"
+            y="-8">
+
+      <lv_label text="ENC 1: Volume" align="top_left" styles="text_title"/>
+      <lv_bar id="bar_enc1" width="136" height="10" align="top_left" y="22"/>
+
+      <lv_label text="ENC 2: Zoom" align="top_left" y="48" styles="text_title"/>
+      <lv_bar id="bar_enc2" width="136" height="10" align="top_left" y="70"/>
+
+      <lv_label text="BTN: Mic Mute" align="top_left" y="100" styles="text_title"/>
+
+      <lv_switch id="sw_mic" align="top_left" y="122"/>
+      <lv_label text="Toggle" align="top_left" y="150" styles="text_muted"/>
+
+      <lv_label text="Tip: press encoder to switch mode" align="bottom_left" styles="text_muted"/>
     </lv_obj>
   </view>
 </screen>
