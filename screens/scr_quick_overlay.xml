@@ -1,0 +1,19 @@
+<screen>
+  <view styles="screen_root" width="172" height="320">
+    <lv_obj styles="panel"
+            width="156" height="120"
+            align="center">
+
+      <lv_label text="QUICK" align="top_left" styles="text_title"/>
+      <lv_label text="Volume" align="top_left" y="26" styles="text_muted"/>
+
+      <lv_slider id="sld_quick_vol"
+                 width="136" height="18"
+                 align="top_left"
+                 y="44"/>
+
+      <lv_label text="Mic" align="top_left" y="76" styles="text_muted"/>
+      <lv_switch id="sw_quick_mic" align="top_left" y="92"/>
+    </lv_obj>
+  </view>
+</screen>
