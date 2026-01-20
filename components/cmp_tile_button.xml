@@ -1,0 +1,18 @@
+<component>
+  <api>
+    <prop name="title" type="string" default="TITLE"/>
+    <prop name="subtitle" type="string" default=""/>
+  </api>
+
+  <view extends="lv_button"
+        styles="btn_primary"
+        width="156" height="44"
+        style_pad_left="10"
+        style_pad_right="10"
+        style_pad_top="6"
+        style_pad_bottom="6">
+
+    <lv_label text="$title" align="left_mid" y="-8" styles="text_title"/>
+    <lv_label text="$subtitle" align="left_mid" y="10" styles="text_muted"/>
+  </view>
+</component>
