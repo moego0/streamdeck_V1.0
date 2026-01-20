@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<screen>
-  <name>Quick Overlay</name>
-  <description>Temporary notification overlay for profile changes, mic toggle, etc.</description>
-  <size width="172" height="320"/>
-  <bg_color>#0a0e2700</bg_color>
-  
-  <!-- Semi-transparent background -->
+<obj class="lv_obj" id="overlay_main">
+<!-- Semi-transparent background -->
   <obj class="lv_obj" id="overlay_bg">
     <width>172</width>
     <height>320</height>
@@ -38,4 +33,4 @@
       <height>20</height>
     </obj>
   </obj>
-</screen>
+</obj>

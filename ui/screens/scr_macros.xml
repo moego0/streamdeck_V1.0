@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<screen>
-  <name>Macro Grid</name>
-  <description>10-key macro layout (2x5 grid) with labels and color indicators</description>
-  <size width="172" height="320"/>
-  <bg_color>#0a0e27</bg_color>
-  
-  <!-- Main Container -->
-  <obj class="lv_obj" id="macros_main">
+<obj class="lv_obj" id="macros_main">
     <layout>flex</layout>
     <flex_direction>column</flex_direction>
     <flex_align>start</flex_align>
@@ -275,4 +268,4 @@
       <text_align>center</text_align>
     </obj>
   </obj>
-</screen>
+</obj>

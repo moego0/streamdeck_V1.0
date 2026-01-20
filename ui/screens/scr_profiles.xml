@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<screen>
-  <name>Profile Switcher</name>
-  <description>List of profiles with selection and navigation</description>
-  <size width="172" height="320"/>
-  <bg_color>#0a0e27</bg_color>
-  
-  <!-- Main Container -->
-  <obj class="lv_obj" id="profile_main">
+<obj class="lv_obj" id="profile_main">
     <layout>flex</layout>
     <flex_direction>column</flex_direction>
     <flex_align>start</flex_align>
@@ -126,4 +119,4 @@
       </obj>
     </obj>
   </obj>
-</screen>
+</obj>

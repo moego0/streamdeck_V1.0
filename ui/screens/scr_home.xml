@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<screen>
-  <name>Home Dashboard</name>
-  <description>Default home screen showing profile, status, and widget tiles</description>
-  <size width="172" height="320</size>
-  <bg_color>#0a0e27</bg_color>
-  
-  <!-- Main Container -->
-  <obj class="lv_obj" id="home_main">
+<obj class="lv_obj" id="home_main">
     <layout>flex</layout>
     <flex_direction>column</flex_direction>
     <flex_align>start</flex_align>
@@ -190,4 +183,4 @@
       <height>12</height>
     </obj>
   </obj>
-</screen>
+</obj>
